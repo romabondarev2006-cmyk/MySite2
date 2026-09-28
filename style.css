@@ -22,7 +22,7 @@ a:hover {
 
 /* ===== Шапка ===== */
 header {
-  background: linear-gradient(90deg, #1a1a2e, #2a1a4a);
+  background: #1f1b3a;              /* сплошной цвет вместо градиента */
   padding: 15px 40px;
   display: flex;
   align-items: center;
@@ -78,7 +78,7 @@ nav a.active {
 
 /* ===== Рекламный баннер ===== */
 .banner {
-  background: linear-gradient(135deg, #7c3aed, #22c55e);
+  background: #7c3aed;              /* сплошной фиолетовый вместо градиента */
   border-radius: 14px;
   padding: 40px;
   text-align: center;
@@ -110,7 +110,6 @@ nav a.active {
 .banner .cta:hover {
   background: #000;
   text-decoration: none;
-  transform: scale(1.05);
 }
 
 /* ===== Карточки товаров ===== */
@@ -162,7 +161,7 @@ table.price {
   margin-top: 25px;
   border-radius: 10px;
   overflow: hidden;
-  background: #f4f1ea;         /* светло-бежевый фон таблицы */
+  background: #f4f1ea;
 }
 
 table.price th,
@@ -170,41 +169,55 @@ table.price td {
   padding: 14px 18px;
   border: 1px solid #c9c2b5;
   text-align: left;
-  color: #2a2a44;              /* тёмный текст на светлом фоне */
+  color: #2a2a44;
 }
 
 table.price th {
-  background: #7c3aed;         /* фиолетовые заголовки */
+  background: #7c3aed;
   color: #fff;
   font-size: 16px;
   border-color: #5b21b6;
 }
 
-/* Чередование строк — светлые тона, без чёрного */
 table.price tr:nth-child(even) td {
-  background: #f9f7f2;         /* почти белый */
+  background: #f9f7f2;
 }
 
 table.price tr:nth-child(odd) td {
-  background: #ede8dd;         /* светло-бежевый */
+  background: #ede8dd;
 }
 
 table.price .highlight {
-  background: #b9f0c4 !important;   /* акция — светло-зелёный */
+  background: #b9f0c4 !important;
   color: #14532d;
   font-weight: bold;
 }
 
 table.price .vip {
-  background: #fde68a !important;   /* VIP — светло-жёлтый */
+  background: #fde68a !important;
   color: #78350f;
   font-weight: bold;
 }
 
 table.price td.price-cell {
-  color: #15803d;              /* тёмно-зелёный текст цены на светлом фоне */
+  color: #15803d;
   font-weight: bold;
   text-align: right;
+}
+
+/* ===== Карта ===== */
+.map {
+  margin-top: 45px;
+}
+.map h2 {
+  margin-bottom: 15px;
+  color: #b388ff;
+}
+.map iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 12px;
 }
 
 /* ===== Футер ===== */
